@@ -18,6 +18,7 @@
 - Adicionado o redirecionamento da página para 404 ao não conseguir carregar um post específico.
 - Filtrar posts por categorias
 - Filtrar posts por subcategorias.
+- Menu responsivo
 
 ## Aprendizagem
 
