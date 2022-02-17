@@ -9,10 +9,7 @@ function Post() {
   const navigate = useNavigate();
 
   useEffect(()=>{
-    busca(`/posts/${id}`, setPost)
-    .catch(()=>{
-      navigate('/404')
-    })
+    busca(`/posts/${id}`, setPost).catch(()=>navigate('/404'))
   },[id,navigate])
 
   return (

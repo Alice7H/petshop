@@ -3,7 +3,7 @@ import React from 'react'
 
 import '../assets/css/componentes/cartao.css'
 
-const Sobre = () => {
+function Sobre() {
 
   return (
     <main>
@@ -20,4 +20,4 @@ const Sobre = () => {
   )
 }
 
-export default Sobre
+export default Sobre;

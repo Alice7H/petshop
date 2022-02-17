@@ -12,6 +12,8 @@
 - Criado um componente para listar os posts recebidos da requisição.
 - Criado um componente para exibir um post específico, passando o id dele.
 - Adicionado o redirecionamento da página para 404 ao não conseguir carregar um post específico.
+- Filtrar posts por categorias
+- Filtrar posts por subcategorias.
 
 ## Conceitos apresentados
 
@@ -41,6 +43,11 @@ useParams é um hook usado para extrair parâmetros da url do navegador.
 useHistory era um hook usado na versão 5 e foi substituído pelo useNavigate a partir da versão 6, e foi usado para redirecionar o usuário em determinada rota.
 A versão 5 usava-se um objeto com algumas propriedades: `history.push('/home')` e a versão 6 se usa uma função: `navigate('/home')`.
 
-# Tarefas futuras
+useRouteMatch era um hook utilizado, que retornava um objeto com as propriedades url e path.
 
-- Tornar a aplicação responsiva: o menu hambúrguer não apresenta os links para navegação de outras páginas em dispositivos menores que 900px de largura
+A url retorna valores dos parâmetros de URL preenchidos, geralmente usada para serem usados na propriedade to do componente Link.
+O path contém um caminho dinâmico com parâmetros de URL, geralmente são usados com o componente Route.
+
+No curso, o path foi apresentado para criar um caminho relativo até a subcategoria.
+
+Usando a versão 6 do react-router-dom, usamos o `*` no final do caminho da rota pai,ou seja, na rota de categorias para que as rotas descendentes fossem reconhecidas, tirando a necessidade de adicionar o path nos componentes Route e Link.
