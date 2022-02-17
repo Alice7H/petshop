@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img alt="banner" title="#Banner" src="./src/assets/img/banner.png" />
+</h1>
+
 # React router: navegação spa
 
 ## Tarefas executadas
@@ -15,7 +19,7 @@
 - Filtrar posts por categorias
 - Filtrar posts por subcategorias.
 
-## Conceitos apresentados
+## Aprendizagem
 
 React-Router-Dom é um pacote react para a manipulação de rotas.
 
@@ -38,12 +42,12 @@ JSON Server é uma biblioteca usado para criar um webservice REST JSON,
 simulando uma API.
 Para isso, precisamos apenas subir um arquivo json como banco de dados através do comando `npx json-server --watch db.json --port 5000`.
 
-useParams é um hook usado para extrair parâmetros da url do navegador.
+O useParams é um hook usado para extrair parâmetros da url do navegador.
 
-useHistory era um hook usado na versão 5 e foi substituído pelo useNavigate a partir da versão 6, e foi usado para redirecionar o usuário em determinada rota.
+O useHistory era um hook usado na versão 5 e foi substituído pelo useNavigate a partir da versão 6, e foi usado para redirecionar o usuário em determinada rota.
 A versão 5 usava-se um objeto com algumas propriedades: `history.push('/home')` e a versão 6 se usa uma função: `navigate('/home')`.
 
-useRouteMatch era um hook utilizado, que retornava um objeto com as propriedades url e path.
+O useRouteMatch era um hook utilizado, que retornava um objeto com as propriedades url e path.
 
 A url retorna valores dos parâmetros de URL preenchidos, geralmente usada para serem usados na propriedade to do componente Link.
 O path contém um caminho dinâmico com parâmetros de URL, geralmente são usados com o componente Route.
