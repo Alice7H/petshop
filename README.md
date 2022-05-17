@@ -41,7 +41,8 @@ A SPA (single page application) faz apenas uma requisição, recebe os arquivos 
 
 JSON Server é uma biblioteca usado para criar um webservice REST JSON,
 simulando uma API.
-Para isso, precisamos apenas subir um arquivo json como banco de dados através do comando `npx json-server --watch db.json --port 5000`.
+
+Para isso, precisamos apenas subir um arquivo json como banco de dados através do comando `npx json-server --watch db.json --port 5000` ou use o comando `npm run server`.
 
 O useParams é um hook usado para extrair parâmetros da url do navegador.
 
@@ -56,3 +57,30 @@ O path contém um caminho dinâmico com parâmetros de URL, geralmente são usad
 No curso, o path foi apresentado para criar um caminho relativo até a subcategoria.
 
 Usando a versão 6 do react-router-dom, usamos o `*` no final do caminho da rota pai,ou seja, na rota de categorias para que as rotas descendentes fossem reconhecidas, tirando a necessidade de adicionar o path nos componentes Route e Link.
+
+## Para rodar a aplicação:
+
+```bash
+
+# Clone este repositório
+$ git clone <https://github.com/Alice7H/petshop.git>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd petshop
+
+# Instale as dependências
+$ yarn install
+#ou
+$ yarn install
+
+# Execute o servidor
+$ npm server
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm start
+#ou
+$ yarn start
+
+# O servidor inciará na porta:5000
+# O projeto inciará na porta:3000 - acesse <http://localhost:3000>
+```
